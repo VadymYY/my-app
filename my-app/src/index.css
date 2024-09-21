@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap");
+@import "react-international-phone/style.css";
+@import "react-datepicker/dist/react-datepicker.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  overscroll-behavior: none;
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
+
+*::-webkit-scrollbar {
+  display: none !important;
+}
+
+body {
+  height: 100 svh;
+}
+
+#root {
+  height: 100%;
+}
+
+.background-ring {
+  @apply absolute rounded-full blur-5xl md:w-1/2 md:h-1/2 w-87.5 h-87.5 bg-opacity-25;
+}
+
+.p-default {
+  @apply px-8 py-6;
+}
+
+.transparent-bg {
+  @apply bg-white bg-opacity-10;
+}
+
+.react-international-phone-country-selector {
+  @apply absolute bottom-0 pr-3 border-r border-white border-opacity-10 left-3;
+}
+
+.react-international-phone-country-selector button {
+  @apply bg-transparent border-none hover:bg-white hover:bg-opacity-10;
+}
+
+.react-international-phone-country-selector-dropdown {
+  @apply !bg-black rounded-lg border border-white border-opacity-10 text-white text-base font-medium leading-tight outline-none;
+}
+
+.react-international-phone-country-selector-dropdown__list-item:hover {
+  @apply bg-white bg-opacity-10;
+}
+
+.react-international-phone-country-selector-dropdown__list-item--focused {
+  @apply text-white bg-white bg-opacity-15;
+}
+
+.react-datepicker {
+  @apply overflow-hidden font-sans text-xs font-medium border-none rounded-md w-80 h-88;
+}
+
+.react-datepicker-wrapper,
+.react-datepicker__input-container {
+  @apply w-full;
+}
+
+.react-datepicker__month {
+  @apply m-0;
+}
+
+.react-datepicker__month-container {
+  @apply bg-black !text-white w-80 h-88 px-4;
+}
+
+.react-datepicker__tab-loop {
+  @apply !mt-0;
+}
+
+.react-datepicker__header {
+  @apply bg-transparent border-none;
+}
+
+.react-datepicker__day-names {
+  @apply flex justify-between w-full py-4;
+}
+
+.react-datepicker__day-name {
+  @apply !text-white text-opacity-80 uppercase text-base font-medium my-0;
+}
+
+.react-datepicker__week {
+  @apply flex justify-between w-full;
+}
+
+.react-datepicker__day {
+  @apply text-base font-light text-white rounded-md h-7;
+}
+
+.react-datepicker__day:hover {
+  @apply bg-white rounded-md bg-opacity-10;
+}
+
+.react-datepicker__day--selected {
+  @apply !bg-primary !text-white border-none outline-none;
+}
+
+.react-datepicker__day--selected:hover {
+  @apply bg-primary bg-opacity-80;
+}
+
+.react-datepicker__day--today {
+  @apply text-white bg-transparent border border-primary;
+}
+
+.react-datepicker__day--outside-month {
+  @apply text-white text-opacity-60;
+}
+
+.react-datepicker__day--disabled {
+  @apply text-white text-opacity-30;
+}
+
+.react-datepicker__day--keyboard-selected {
+  @apply bg-transparent;
+}
+
+.react-datepicker__triangle {
+  @apply hidden;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none !important;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
+
+::-webkit-scrollbar {
+  @apply w-1;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply w-1 rounded-md bg-night-rider;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #353434 transparent;
+}
+
+.fc-widget-normal {
+  @apply !bottom-20 !right-1 !z-[999];
+}
+
+#chat-widget-container {
+  @apply !bottom-20 !right-0 !z-[999];
+}
+
+pre {
+  @apply font-sans whitespace-pre-wrap;
+}
+
+.btn {
+  @apply px-4 py-3 font-sans rounded outline-none bg-primary hover:bg-opacity-90;
+}
